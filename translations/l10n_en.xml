@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>WilkDev</translationContributors>
+    <texts>
+	    <text name="shopItem_TLG_Winery" text="Classic Winery" />
+		<text name="fillType_wineRed" text="Wine - Red" />
+		<text name="pallet_wineRed" text="Wine - Red" />
+		<text name="fillType_wineSweetRed" text="Wine - Sweet Red" />
+		<text name="pallet_wineSweetRed" text="Wine - Sweet Red" />
+		<text name="fillType_wineReserve" text="Wine - Reserve" />
+		<text name="pallet_wineReserve" text="Wine - Reserve" />
+		<text name="fillType_winePort" text="Wine - Port" />
+		<text name="pallet_winePort" text="Wine - Port" />
+		<text name="fillType_wineWhite" text="Wine - White" />
+		<text name="pallet_wineWhite" text="Wine - White" />
+		<text name="fillType_wineRose" text="Wine - Rosé" />
+		<text name="pallet_wineRose" text="Wine - Rosé" />
+		<text name="brewery_fastFoodRestaurant" text="Pub" />
+	</texts>
+</l10n>

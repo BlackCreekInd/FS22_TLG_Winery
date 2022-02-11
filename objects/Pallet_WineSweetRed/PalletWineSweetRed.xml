@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>
+            <en>$l10n_pallet_wineSweetRed</en>
+        </name>
+        <image>objects/Pallet_WineSweetRed/store_empty.dds</image>
+        <category>pallets</category>
+        <brand>TLG</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>46336</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>7680</indexBufferMemoryUsage>
+        <textureMemoryUsage>1245184</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <price></price>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>objects/Pallet_WineSweetRed/chocolateBoxPallet.i3d</filename>
+        <size width="1.4" length="1" height="1.1"/>
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false"/>
+    </base>
+    <animations>
+        <animation name="fillAnimation">
+            <part node="chocolateBox01" startTime="0.000" endTime="0.001" visibility="false"/>
+            <part node="chocolateBox01" startTime="0.001" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.001" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox02" startTime="0.000" endTime="0.091" visibility="false"/>
+            <part node="chocolateBox02" startTime="0.091" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.091" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox03" startTime="0.000" endTime="0.182" visibility="false"/>
+            <part node="chocolateBox03" startTime="0.182" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.182" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox04" startTime="0.000" endTime="0.273" visibility="false"/>
+            <part node="chocolateBox04" startTime="0.273" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.273" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox05" startTime="0.000" endTime="0.364" visibility="false"/>
+            <part node="chocolateBox05" startTime="0.364" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.364" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox06" startTime="0.000" endTime="0.455" visibility="false"/>
+            <part node="chocolateBox06" startTime="0.455" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.455" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox07" startTime="0.000" endTime="0.545" visibility="false"/>
+            <part node="chocolateBox07" startTime="0.545" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.545" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox08" startTime="0.000" endTime="0.636" visibility="false"/>
+            <part node="chocolateBox08" startTime="0.636" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.636" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox09" startTime="0.000" endTime="0.727" visibility="false"/>
+            <part node="chocolateBox09" startTime="0.727" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.727" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox10" startTime="0.000" endTime="0.818" visibility="false"/>
+            <part node="chocolateBox10" startTime="0.818" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.818" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox11" startTime="0.000" endTime="0.909" visibility="false"/>
+            <part node="chocolateBox11" startTime="0.909" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.909" direction="-1" pitchScale="0.8"/>
+            <part node="chocolateBox12" startTime="0.000" endTime="0.999" visibility="false"/>
+            <part node="chocolateBox12" startTime="0.999" endTime="1.000" visibility="true"/>
+            <sound template="palletsFillPaper" startTime="0.999" direction="-1" pitchScale="0.8"/>
+        </animation>
+    </animations>
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="WINESWEETRED" capacity="384">
+                        <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="216" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+    <dynamicMount triggerNode="dynamicMountTrigger"/>
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="chocolateBoxCol01"/>
+            <meshNode node="chocolateBoxCol02"/>
+            <meshNode node="chocolateBoxCol03"/>
+            <meshNode node="chocolateBoxCol04"/>
+            <meshNode node="chocolateBoxCol05"/>
+            <meshNode node="chocolateBoxCol06"/>
+            <meshNode node="chocolateBoxCol07"/>
+            <meshNode node="chocolateBoxCol08"/>
+            <meshNode node="chocolateBoxCol09"/>
+            <meshNode node="chocolateBoxCol10"/>
+            <meshNode node="chocolateBoxCol11"/>
+            <meshNode node="chocolateBoxCol12"/>
+        </meshNodes>
+    </tensionBeltObject>
+    <i3dMappings>
+        <i3dMapping id="chocolateBoxPallet_component1" node="0>"/>
+        <i3dMapping id="euroPalletVis" node="0>0"/>
+        <i3dMapping id="pallet02_mat" node="0>0|0"/>
+        <i3dMapping id="dynamicMountTrigger" node="0>1"/>
+        <i3dMapping id="dischargeNode" node="0>2"/>
+        <i3dMapping id="chocolateBox01" node="0>4|0"/>
+        <i3dMapping id="chocolateBox02" node="0>4|1"/>
+        <i3dMapping id="chocolateBox03" node="0>4|2"/>
+        <i3dMapping id="chocolateBox04" node="0>4|3"/>
+        <i3dMapping id="chocolateBox05" node="0>4|4"/>
+        <i3dMapping id="chocolateBox06" node="0>4|5"/>
+        <i3dMapping id="chocolateBox07" node="0>4|6"/>
+        <i3dMapping id="chocolateBox08" node="0>4|7"/>
+        <i3dMapping id="chocolateBox09" node="0>4|8"/>
+        <i3dMapping id="chocolateBox10" node="0>4|9"/>
+        <i3dMapping id="chocolateBox11" node="0>4|10"/>
+        <i3dMapping id="chocolateBox12" node="0>4|11"/>
+        <i3dMapping id="chocolateBoxCol01" node="0>5|0"/>
+        <i3dMapping id="chocolateBoxCol02" node="0>5|1"/>
+        <i3dMapping id="chocolateBoxCol03" node="0>5|2"/>
+        <i3dMapping id="chocolateBoxCol04" node="0>5|3"/>
+        <i3dMapping id="chocolateBoxCol05" node="0>5|4"/>
+        <i3dMapping id="chocolateBoxCol06" node="0>5|5"/>
+        <i3dMapping id="chocolateBoxCol07" node="0>5|6"/>
+        <i3dMapping id="chocolateBoxCol08" node="0>5|7"/>
+        <i3dMapping id="chocolateBoxCol09" node="0>5|8"/>
+        <i3dMapping id="chocolateBoxCol10" node="0>5|9"/>
+        <i3dMapping id="chocolateBoxCol11" node="0>5|10"/>
+        <i3dMapping id="chocolateBoxCol12" node="0>5|11"/>
+    </i3dMappings>
+</vehicle>

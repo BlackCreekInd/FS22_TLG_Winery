@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="61">
+    <author>Thin Line Gaming</author>
+	<contributors>
+        <contributor>Wes</contributor>
+        <contributor>RGTX</contributor>
+	    <contributor>BERNIESCS</contributor>
+		<contributor>WilkDev</contributor>
+	</contributors>
+    <version>1.2.1.2</version>
+    <title>TLG Classic Winery</title>
+    <description>
+        <en>
+            <![CDATA[Grapes in, Wine out. Sort yourself out.]]>
+        </en>
+    </description>
+    <iconFilename>modIcon.dds</iconFilename>
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="TLG_Winery.xml"/>
+        <storeItem xmlFilename="objects/fastFoodRestaurant/fastFoodRestaurant.xml"/>
+        <storeItem xmlFilename="objects/Pallet_WineRed/PalletWineRed.xml"/>
+        <storeItem xmlFilename="objects/Pallet_WineSweetRed/PalletWineSweetRed.xml"/>
+        <storeItem xmlFilename="objects/Pallet_WineReserve/PalletWineReserve.xml"/>
+        <storeItem xmlFilename="objects/Pallet_WinePort/PalletWinePort.xml"/>
+        <storeItem xmlFilename="objects/Pallet_WineWhite/PalletWineWhite.xml"/>
+        <storeItem xmlFilename="objects/Pallet_WineRose/PalletWineRose.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/greenhouseSmall/greenhouseSmallGrape.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/greenhouseSmall/greenhouseSmallGrapeGreen.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/greenhouseMedium/greenhouseMediumGrape.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/greenhouseMedium/greenhouseMediumGrapeGreen.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/greenhouseLarge/greenhouseLargeGrape.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/greenhouseLarge/greenhouseLargeGrapeGreen.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/grapeGreenPallet/grapeGreenPallet.xml"/>
+        <storeItem xmlFilename="grapeGreen/objects/trailer20000L/trailer20000L.xml"/>
+		<storeItem xmlFilename="objects/discOVigne/discOVigne.xml"/>
+		<storeItem xmlFilename="objects/tpn140/tpn140.xml"/>
+		
+    </storeItems>
+	
+    <brands>
+        <brand name="TLG" title="Thin Line Gaming" image="store_textures/tlglogo.png"/>
+    </brands>
+	<brandcolors>
+        <color name="TLG" value="1 1 1 0" />
+    </brandcolors>		
+
+    <l10n filenamePrefix="translations/l10n"/>
+	
+    <fillTypes filename="fillTypes.xml" />
+    <fruitTypes filename="fruitTypes.xml" />
+    <densityMapHeightTypes filename="densityMapHeightTypes.xml" />
+    <growth filename="growth.xml" />
+
+</modDesc>

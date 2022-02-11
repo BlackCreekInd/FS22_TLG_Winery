@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grape" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/placeables/lizard/grape/grape_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/grape/grape_fmask.png"/>
+    <File fileId="2" filename="$data/placeables/lizard/grape/grape_normal.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grape_wind_harvestReady_harvested_mat1" materialId="4" customShaderId="4" customShaderVariation="wind_vertexOffset_hideAlpha_harvestShake">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0 0 0 0"/>
+      <CustomParameter name="hideArea" value="0.58 0.74 0 0.3"/>
+      <CustomParameter name="hideSectionStates" value="1 1 1 1"/>
+      <CustomParameter name="harvestPosition" value="0 1.5 0 0"/>
+      <CustomParameter name="shakeScale" value="0.15 0 1 1.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grape.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="LOD0" nodeId="20">
+        <Shape shapeId="1" name="greenSmall" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="greenBig" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="2" name="dead" translation="0 0.15 0" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="1" name="dead" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="2" name="dead" translation="0 0.15 0" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="dead" translation="0 0.3 0" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

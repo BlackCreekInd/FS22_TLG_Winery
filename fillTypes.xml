@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+	<fillTypes>
+		<fillType name="GRAPEGREEN" title="Green Grapes" showOnPriceTable="true" achievementName="DeliveryGrapes" unitShort="$l10n_unit_literShort">
+			<physics massPerLiter="0.60" maxPhysicalSurfaceAngle="15" />
+			<image hud     ="hud/hud_fill_grapeGreen.png" />
+			<pallet filename="grapeGreen/objects/grapeGreenPallet/grapeGreenPallet.xml" />
+            <textures   diffuse ="grapeGreen/textures/fillPlanes/grapeGreen_diffuse.png"
+                        normal  ="grapeGreen/textures/fillPlanes/grapeGreen_normal.png"
+                        specular="grapeGreen/textures/fillPlanes/grapeGreen_specular.png"
+                        distance="grapeGreen/textures/fillPlanes/distance/grapeGreenDistance_diffuse.png" />
+			<economy pricePerLiter="0.75">
+				<factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.08" />
+                    <factor period="3"  value="1.20" />
+                    <factor period="4"  value="1.10" />
+                    <factor period="5"  value="1.03" />
+                    <factor period="6"  value="0.93" />
+                    <factor period="7"  value="0.87" />
+                    <factor period="8"  value="0.75" />
+                    <factor period="9"  value="0.84" />
+                    <factor period="10" value="0.88" />
+                    <factor period="11" value="0.95" />
+                    <factor period="12" value="0.99" />
+                </factors>
+			</economy>
+            <effects fruitSmokeColor="0.3006 0.1651 0.0630 1.0000"/>
+		</fillType>
+
+        <fillType name="WINERED" title="$l10n_fillType_wineRed" showOnPriceTable="true">
+			<physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/wine_red.png" />
+			<pallet filename="objects/Pallet_WineRed/PalletWineRed.xml" />
+			<economy pricePerLiter="3">
+				<factors>
+					<factor period="1"  value="1.02" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.99" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.02" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.01" />
+                    <factor period="11" value="0.96" />
+                    <factor period="12" value="1.12" />
+				</factors>
+			</economy>
+		</fillType>	
+
+		<fillType name="WINESWEETRED" title="$l10n_fillType_wineSweetRed" showOnPriceTable="true">
+			<physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/wine_sweetRed.png" />
+			<pallet filename="objects/Pallet_WineSweetRed/PalletWineSweetRed.xml" />
+			<economy pricePerLiter="4.5">
+				<factors>
+					<factor period="1"  value="1.08" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.97" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.10" />
+                    <factor period="8"  value="1.11" />
+                    <factor period="9"  value="1.06" />
+                    <factor period="10" value="0.95" />
+                    <factor period="11" value="0.91" />
+                    <factor period="12" value="0.99" />
+				</factors>
+			</economy>
+		</fillType>	
+
+		<fillType name="WINERESERVE" title="$l10n_fillType_wineReserve" showOnPriceTable="true">
+			<physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/wine_reserve.png" />
+			<pallet filename="objects/Pallet_WineReserve/PalletWineReserve.xml" />
+			<economy pricePerLiter="8">
+				<factors>
+					<factor period="1"  value="0.88" />
+                    <factor period="2"  value="0.92" />
+                    <factor period="3"  value="1.02" />
+                    <factor period="4"  value="1.04" />
+                    <factor period="5"  value="1.10" />
+                    <factor period="6"  value="1.03" />
+                    <factor period="7"  value="1.01" />
+                    <factor period="8"  value="0.97" />
+                    <factor period="9"  value="0.95" />
+                    <factor period="10" value="0.93" />
+                    <factor period="11" value="0.91" />
+                    <factor period="12" value="0.90" />
+				</factors>
+			</economy>
+		</fillType>	
+
+		<fillType name="WINEPORT" title="$l10n_fillType_winePort" showOnPriceTable="true">
+			<physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/wine_port.png" />
+			<pallet filename="objects/Pallet_WinePort/PalletWinePort.xml" />
+			<economy pricePerLiter="10">
+				<factors>
+					<factor period="1"  value="1.13" />
+                    <factor period="2"  value="1.25" />
+                    <factor period="3"  value="1.29" />
+                    <factor period="4"  value="1.19" />
+                    <factor period="5"  value="0.99" />
+                    <factor period="6"  value="0.91" />
+                    <factor period="7"  value="0.81" />
+                    <factor period="8"  value="0.77" />
+                    <factor period="9"  value="0.85" />
+                    <factor period="10" value="0.95" />
+                    <factor period="11" value="0.93" />
+                    <factor period="12" value="0.97" />
+				</factors>
+			</economy>
+		</fillType>
+
+        <fillType name="WINEWHITE" title="$l10n_fillType_wineWhite" showOnPriceTable="true">
+			<physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/wine_white.png" />
+			<pallet filename="objects/Pallet_WineWhite/PalletWineWhite.xml" />
+			<economy pricePerLiter="5">
+				<factors>
+					<factor period="1"  value="1.08" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.97" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.10" />
+                    <factor period="8"  value="1.11" />
+                    <factor period="9"  value="1.06" />
+                    <factor period="10" value="0.95" />
+                    <factor period="11" value="0.91" />
+                    <factor period="12" value="0.99" />
+				</factors>
+			</economy>
+		</fillType>
+
+        <fillType name="WINEROSE" title="$l10n_fillType_wineRose" showOnPriceTable="true">
+			<physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+			<image hud     ="hud/wine_rose.png" />
+			<pallet filename="objects/Pallet_WineRose/PalletWineRose.xml" />
+			<economy pricePerLiter="20">
+				<factors>
+					<factor period="1"  value="1.13" />
+                    <factor period="2"  value="1.25" />
+                    <factor period="3"  value="1.29" />
+                    <factor period="4"  value="1.19" />
+                    <factor period="5"  value="0.99" />
+                    <factor period="6"  value="0.91" />
+                    <factor period="7"  value="0.81" />
+                    <factor period="8"  value="0.77" />
+                    <factor period="9"  value="0.85" />
+                    <factor period="10" value="0.95" />
+                    <factor period="11" value="0.93" />
+                    <factor period="12" value="0.97" />
+				</factors>
+			</economy>
+		</fillType>	
+	</fillTypes>
+	
+
+	
+    <fillTypeCategories>
+		<fillTypeCategory name="PRODUCT">GRAPEGREEN WINERED WINESWEETRED WINERESERVE WINEPORT</fillTypeCategory>
+		<fillTypeCategory name="TRAINWAGON">GRAPEGREEN WINERED WINESWEETRED WINERESERVE WINEPORT</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >GRAPEGREEN</fillTypeCategory>
+    </fillTypeCategories>
+	
+    <fillTypeSounds>
+        <fillTypeSound fillTypes="GRAPEGREEN">
+            <sound template="grapeFill"/>
+        </fillTypeSound>
+    </fillTypeSounds>
+
+</map>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+
+		<!--New fillTypes-->
+		<text name=""        text=""/>
+		
+		
+		<!--New Pallets-->
+		<text name="storeItem_grapeBoxPallet"           text="Grape Pallet"/>
+		<text name="storeItem_oliveBoxPallet"           text="Olive Pallet"/>
+		
+		<!--New Shop Item Names & Functions-->
+		<text name="shopItem_vinehouse"               text="Vinehouse"/>
+		<text name="shopItem_vinehouseRev"            text="Vinehouse Reverse"/>
+		 
+		
+	</texts>
+</l10n>

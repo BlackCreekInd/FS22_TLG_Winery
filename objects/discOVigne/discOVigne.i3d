@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="discOVigne" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="15" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="8" filename="$data/shared/default_normal.png"/>
+    <File fileId="14" filename="$data/vehicles/agrisem/discOVigne/discOVigneDecal_diffuse.png"/>
+    <File fileId="13" filename="$data/vehicles/agrisem/discOVigne/discOVigneDiscsArray.png"/>
+    <File fileId="10" filename="$data/vehicles/agrisem/discOVigne/discOVigneDiscs_diffuse.png"/>
+    <File fileId="11" filename="$data/vehicles/agrisem/discOVigne/discOVigneDiscs_normal.png"/>
+    <File fileId="12" filename="$data/vehicles/agrisem/discOVigne/discOVigneDiscs_vmask.png"/>
+    <File fileId="9" filename="$data/vehicles/agrisem/discOVigne/discOVigneHoses_vmask.png"/>
+    <File fileId="2" filename="$data/vehicles/agrisem/discOVigne/discOVigne_normal.png"/>
+    <File fileId="3" filename="$data/vehicles/agrisem/discOVigne/discOVigne_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="4" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="discOVigne_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.6592 0 1"/>
+      <CustomParameter name="colorMat2" value="0.041 0.075 0.559 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="discOVigneDecal_mat" materialId="6" alphaBlending="true" customShaderId="4" customShaderVariation="Decal">
+      <Texture fileId="14"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="discOVigneDiscs_mat" materialId="7" customShaderId="4" customShaderVariation="vtxRotate">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <Custommap name="mTrackArray" fileId="13"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="rotationAngle" value="0 0 0 0"/>
+      <CustomParameter name="prevRotationAngle" value="0 0 0 0"/>
+    </Material>
+    <Material name="discOVigneHoses_mat" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.01 0.01 0.01 5"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="discOVigne.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="discOVigne_main_component1" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="23" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="discOVigne_vis" clipDistance="300" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true" skinBindNodeIds="24 38">
+          <TransformGroup name="wheel" translation="0.00410889 0.362332 -1.01471" nodeId="25"/>
+          <TransformGroup name="attachable" nodeId="26">
+            <Shape shapeId="3" name="supportCol" visibility="false" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="27" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="attacherJoint" translation="0 0.555217 0.886538" rotation="0 90 0" nodeId="28"/>
+            <TransformGroup name="topReferenceNode" translation="0 1.26517 0.868494" nodeId="29"/>
+            <TransformGroup name="connectionHoses" nodeId="30">
+              <Shape shapeId="4" name="hydraulicIn01_detached" translation="0 0.716839 0" clipDistance="300" nodeId="31" materialIds="8" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="5" name="silver1_to_delete" translation="0 -0.716839 0" clipDistance="60" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="6" name="hydraulicOut01_detached" translation="0 0.716839 0" clipDistance="300" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="7" name="silver1_to_delete1" translation="0 -0.716839 0" clipDistance="60" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <TransformGroup name="hydraulicIn01" translation="-0.1317 1.16254 0.759077" nodeId="35"/>
+              <TransformGroup name="hydraulicOut01" translation="-0.0955095 1.16018 0.759283" nodeId="36"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="movingParts" nodeId="37">
+            <TransformGroup name="roll" translation="0.00410889 0.362332 -1.01471" clipDistance="300" nodeId="38"/>
+            <Shape shapeId="8" name="discs" translation="0.000917854 0.419835 -0.166379" clipDistance="300" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="workAreas" nodeId="40">
+            <TransformGroup name="workAreaStart" translation="1.8 0 1" nodeId="41"/>
+            <TransformGroup name="workAreaWidth" translation="-1.8 0 1" nodeId="42"/>
+            <TransformGroup name="workAreaHeight" translation="1.8 0 -0.51719" nodeId="43"/>
+            <TransformGroup name="groundReferenceNode" translation="0 0.1779 0" nodeId="44"/>
+            <TransformGroup name="depthNode" nodeId="45"/>
+          </TransformGroup>
+          <TransformGroup name="ai" nodeId="46">
+            <TransformGroup name="aiMarkerLeft" translation="1.8 0 1" nodeId="47"/>
+            <TransformGroup name="aiMarkerRight" translation="-1.8 0 1" nodeId="48"/>
+            <TransformGroup name="aiMarkerBack" translation="0 0 -0.51719" nodeId="49"/>
+          </TransformGroup>
+          <TransformGroup name="effects" nodeId="50">
+            <Shape shapeId="9" name="smokeEmitter" visibility="false" clipDistance="300" nodeId="51" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="sweepEffectLinkNode01" translation="0.626616 0.156172 0.948532" nodeId="52"/>
+            <TransformGroup name="sweepEffectLinkNode02" translation="-0.0308846 0.156172 0.948532" nodeId="53"/>
+            <TransformGroup name="sweepEffectLinkNode03" translation="-0.619186 0.156172 0.948532" nodeId="54"/>
+            <TransformGroup name="rollerEffect01LinkNode" translation="0 0.469402 -1.90321" nodeId="55"/>
+            <TransformGroup name="discEffect01LinkNode" translation="1.42109e-16 2.84217e-16 0" nodeId="56"/>
+          </TransformGroup>
+          <TransformGroup name="visuals" nodeId="57">
+            <Shape shapeId="10" name="sticker_decal" translation="0 0.716839 0" clipDistance="50" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="11" name="screw_decal" translation="0 0.716839 0" clipDistance="30" nodeId="59" materialIds="4" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="skinnedMeshs" nodeId="60">
+          <Shape shapeId="12" name="hose" translation="0 0.716839 0" clipDistance="300" nodeId="61" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grapeGreen" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="7" filename="textures/grapeGreenLOD_diffuse.png"/>
+    <File fileId="8" filename="textures/grapeGreenLOD_normal.png"/>
+    <File fileId="2" filename="textures/grapeGreen_diffuse.png"/>
+    <File fileId="4" filename="textures/grapeGreen_fmask.png"/>
+    <File fileId="3" filename="textures/grapeGreen_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grape_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="grape_wind_harvestReady_harvested_mat1" materialId="11" customShaderId="5" customShaderVariation="wind_vertexOffset_hideAlpha_harvestShake">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.2 0.74 0 0.3"/>
+      <CustomParameter name="hideArea" value="0.58 0.74 0 0.3"/>
+      <CustomParameter name="hideSectionStates" value="1 1 1 1"/>
+      <CustomParameter name="harvestPosition" value="0 1.5 0 0"/>
+      <CustomParameter name="shakeScale" value="0.15 0 1 1.5"/>
+    </Material>
+    <Material name="grape_wind_mat" materialId="10" customShaderId="5" customShaderVariation="wind_vertexOffset_hideAlpha">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.2 0 0 0"/>
+      <CustomParameter name="hideArea" value="0 0 0 0"/>
+      <CustomParameter name="hideSectionStates" value="1 1 1 1"/>
+    </Material>
+    <Material name="grape_wind_noLeaves_dead_mat" materialId="7" customShaderId="5" customShaderVariation="wind_vertexOffset_hideAlpha">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.2 0.83 0.5 1"/>
+      <CustomParameter name="hideArea" value="0.6 0.83 0.5 1"/>
+      <CustomParameter name="hideSectionStates" value="0 0 0 1"/>
+    </Material>
+    <Material name="grapeLOD_harvestReady_harvested_mat" materialId="9" customShaderId="5" customShaderVariation="vertexOffset_hideUVShift">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.15 104 0.168 0"/>
+      <CustomParameter name="hideArea" value="0 1 0.104 0.168"/>
+      <CustomParameter name="hideSectionStates" value="0 0 0 1"/>
+      <CustomParameter name="hideShiftOffset" value="-0.082 8 0 1"/>
+    </Material>
+    <Material name="grapeLOD_mat" materialId="8" customShaderId="5" customShaderVariation="vertexOffset_hideUVShift">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.15 0 0 1"/>
+      <CustomParameter name="hideArea" value="0 0 0 0"/>
+      <CustomParameter name="hideSectionStates" value="1 1 1 1"/>
+      <CustomParameter name="hideShiftOffset" value="0 1 1 1"/>
+    </Material>
+    <Material name="grapeLOD_noLeavesDead_mat" materialId="6" customShaderId="5" customShaderVariation="vertexOffset_hideUVShift">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.15 71 0.82 0"/>
+      <CustomParameter name="hideArea" value="0 1 0.71 0.82"/>
+      <CustomParameter name="hideSectionStates" value="0 0 0 1"/>
+      <CustomParameter name="hideShiftOffset" value="-0.1279 0 0 1"/>
+    </Material>
+    <Material name="lambert1" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grapeGreen.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="poles" nodeId="53">
+        <TransformGroup name="pole01" nodeId="54">
+          <Shape shapeId="1" name="col" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="55" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="2" name="visual" clipDistance="75" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="pole02" nodeId="57">
+          <Shape shapeId="1" name="col" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="58" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="visual" translation="0 0 6.45985e-14" clipDistance="75" nodeId="59" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="panels" nodeId="60">
+        <TransformGroup name="panel01" nodeId="61">
+          <Shape shapeId="4" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="63">
+            <TransformGroup name="A_noLeaves_dead" clipDistance="175" nodeId="64" lodDistance="0 25">
+              <Shape shapeId="5" name="LOD0" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="LOD1" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="A_greenSmall" clipDistance="175" nodeId="67" lodDistance="0 25">
+              <Shape shapeId="7" name="LOD0" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="LOD1" nodeId="69" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="A_greenBig" clipDistance="175" nodeId="70" lodDistance="0 25">
+              <Shape shapeId="9" name="LOD0" nodeId="71" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="10" name="LOD1" nodeId="72" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="A_harvestReady_harvested" clipDistance="175" nodeId="73" lodDistance="0 25">
+              <Shape shapeId="11" name="LOD0" nodeId="74" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="LOD1" nodeId="75" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="panel02" nodeId="76">
+          <Shape shapeId="4" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="77" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="78">
+            <TransformGroup name="B_noLeaves_dead" clipDistance="175" nodeId="79" lodDistance="0 25">
+              <Shape shapeId="13" name="LOD0" nodeId="80" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="LOD1" nodeId="81" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="B_greenSmall" clipDistance="175" nodeId="82" lodDistance="0 25">
+              <Shape shapeId="14" name="LOD0" nodeId="83" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="LOD1" nodeId="84" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="B_greenBig" clipDistance="175" nodeId="85" lodDistance="0 25">
+              <Shape shapeId="15" name="LOD0" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="10" name="LOD1" nodeId="87" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="B_harvestReady_harvested" clipDistance="175" nodeId="88" lodDistance="0 25">
+              <Shape shapeId="16" name="LOD0" nodeId="89" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="LOD1" nodeId="90" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="panel03" nodeId="91">
+          <Shape shapeId="4" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="92" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="93">
+            <TransformGroup name="C_noLeaves_dead" clipDistance="175" nodeId="94" lodDistance="0 25">
+              <Shape shapeId="17" name="LOD0" nodeId="95" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="LOD1" nodeId="96" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="C_greenSmall" clipDistance="175" nodeId="97" lodDistance="0 25">
+              <Shape shapeId="18" name="LOD0" nodeId="98" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="LOD1" nodeId="99" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="C_greenBig" clipDistance="175" nodeId="100" lodDistance="0 25">
+              <Shape shapeId="19" name="LOD0" nodeId="101" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="10" name="LOD1" nodeId="102" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="C_harvestReady_harvested" clipDistance="175" nodeId="103" lodDistance="0 25">
+              <Shape shapeId="20" name="LOD0" nodeId="104" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="LOD1" nodeId="105" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="panel04" nodeId="106">
+          <Shape shapeId="4" name="col" translation="-0.0113321 1.44985 -0.0272842" visibility="false" static="true" dynamicFriction="0" density="0.0001" nodeId="107" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visuals" nodeId="108">
+            <TransformGroup name="D_noLeaves_dead" clipDistance="175" nodeId="109" lodDistance="0 25">
+              <Shape shapeId="21" name="LOD0" nodeId="110" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="LOD1" nodeId="111" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="D_greenSmall" clipDistance="175" nodeId="112" lodDistance="0 25">
+              <Shape shapeId="22" name="LOD0" nodeId="113" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="LOD1" nodeId="114" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="D_greenBig" clipDistance="175" nodeId="115" lodDistance="0 25">
+              <Shape shapeId="23" name="LOD0" nodeId="116" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="10" name="LOD1" nodeId="117" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="D_harvestReady" clipDistance="175" nodeId="118" lodDistance="0 25">
+              <Shape shapeId="24" name="LOD0" nodeId="119" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="LOD1" nodeId="120" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

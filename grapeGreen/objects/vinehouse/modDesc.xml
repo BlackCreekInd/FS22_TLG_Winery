@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="62">
+     <author>FarmerAds</author>
+    <version>1.0</version>
+
+    <title>
+        <en>Vinehouse</en>
+        <de>Rebhaus</de>
+    </title>
+
+    <description>
+        <en>Vinehouse</en>
+        <de>Rebhaus</de>
+    </description>
+
+    <iconFilename>textures/Vinehouse.dds</iconFilename>
+
+    <multiplayer supported="true" />
+
+    <storeItems>
+        <storeItem xmlFilename="vinehouse.xml"/>
+		<storeItem xmlFilename="vinehouseRev.xml"/>
+		<storeItem xmlFilename="fillTypes/pallets/grapeBoxPallet/grapeBoxPallet.xml"/>
+		<storeItem xmlFilename="fillTypes/pallets/oliveBoxPallet/oliveBoxPallet.xml"/>
+    </storeItems>
+	
+	<extraSourceFiles>
+        <sourceFile filename="scripts/new_fillTypes.lua" />
+    </extraSourceFiles>
+
+    <brands>
+        <brand name="ALSMODS" title="ALS Mods" image="textures/AlsMods.dds"/>
+    </brands>
+   
+    <l10n filenamePrefix="languages/l10n"/>
+   
+</modDesc>

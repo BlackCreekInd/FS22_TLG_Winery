@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <densityMapHeightTypes firstChannel="0" numChannels="6">
+        <densityMapHeightType fillTypeName="GRAPEGREEN" maxSurfaceAngle="35" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+    </densityMapHeightTypes>
+</map>

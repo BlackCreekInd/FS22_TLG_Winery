@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+	<fillTypes>
+		<fillType name="GRAPEGREEN" title="Green Grapes" showOnPriceTable="true" achievementName="DeliveryGrapes" unitShort="$l10n_unit_literShort">
+			<physics massPerLiter="0.60" maxPhysicalSurfaceAngle="15" />
+			<image hud     ="hud/hud_fill_grapeGreen.png" />
+			<pallet filename="grapeGreenPallet/grapeGreenPallet.xml" />
+            <textures   diffuse ="textures/fillPlanes/grapeGreen_diffuse.png"
+                        normal  ="textures/fillPlanes/grapeGreen_normal.png"
+                        specular="textures/fillPlanes/grapeGreen_specular.png"
+                        distance="textures/fillPlanes/distance/grapeGreenDistance_diffuse.png" />
+			<economy pricePerLiter="0.75">
+				<factors>
+                    <factor period="1"  value="1.05" />
+                    <factor period="2"  value="1.08" />
+                    <factor period="3"  value="1.20" />
+                    <factor period="4"  value="1.10" />
+                    <factor period="5"  value="1.03" />
+                    <factor period="6"  value="0.93" />
+                    <factor period="7"  value="0.87" />
+                    <factor period="8"  value="0.75" />
+                    <factor period="9"  value="0.84" />
+                    <factor period="10" value="0.88" />
+                    <factor period="11" value="0.95" />
+                    <factor period="12" value="0.99" />
+                </factors>
+			</economy>
+            <effects fruitSmokeColor="0.3006 0.1651 0.0630 1.0000"/>
+		</fillType>
+    </fillTypes>	
+	
+    <fillTypeCategories>
+		<fillTypeCategory name="PRODUCT">GRAPEGREEN</fillTypeCategory>
+		<fillTypeCategory name="TRAINWAGON">GRAPEGREEN</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL" >GRAPEGREEN</fillTypeCategory>
+
+    </fillTypeCategories>
+	
+	<!--
+    <fillTypeSounds>
+        <fillTypeSound fillTypes="GRAPEGREEN">
+            <sound template="grapeFill"/>
+        </fillTypeSound>
+    </fillTypeSounds>
+	-->
+</map>

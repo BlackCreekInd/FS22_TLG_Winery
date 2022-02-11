@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fruitTypes.xsd">
+    <fruitTypes>
+        <fruitType name="grapegreen" shownOnMap="true" useForFieldJob="false">
+            <general startStateChannel="0" numStateChannels="4" />
+            <cultivation needsSeeding="false" allowsSeeding="false" directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0">
+                <state state="1" />
+                <state state="2" />
+                <state state="4" />
+                <state state="6" />
+                <state state="8" />
+                <state state="14" />
+            </cultivation>
+            <harvest weedState="11" minHarvestingGrowthState="10" maxHarvestingGrowthState="11" cutState="0" allowsPartialGrowthState="false" literPerSqm="0.92" cutHeight="0.20">
+                <transition srcState="10" targetState="12" />
+                <transition srcState="11" targetState="13" />
+            </harvest>
+            <growth witheredState="14" numGrowthStates="7" growthStateTime="24000000" resetsSpray="true" growthRequiresLime="true" />
+            <options lowSoilDensityRequired="true" increasesSoilDensity="true" consumesLime="true" startSprayState="0" />
+            <cropCare maxWeederState="0" maxWeederHoeState="0" />
+            <mapColors default="0.1046 0.1022 0.2664 1" colorBlind="0.0252 0.0356 0.0976 1"/>
+            <destruction canBeDestroyed="false" />
+        </fruitType>
+    </fruitTypes>
+</map>

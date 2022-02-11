@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Chocolate Pallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="PalletWineReserve_diffuse.dds"/>
+    <File fileId="7" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_normal.png"/>
+    <File fileId="8" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
+    <File fileId="5" filename="$data/objects/pallets/euroPallet02_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chocolateBox_chocolateBox_mat" materialId="133">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="euroPallet02_mat" materialId="132">
+      <Texture fileId="5"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="euroPallet_euroPallet01_mat" materialId="131">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="130" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chocolateBoxPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="chocolateBoxPallet_component1" dynamic="true" compound="true" collisionMask="2109442" density="0.0001" clipDistance="150" nodeId="150" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="euroPalletVis" nodeId="151" materialIds="131" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="pallet02_mat" visibility="false" clipDistance="1" nodeId="152" materialIds="132" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="4" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="153" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="dischargeNode" translation="0 0.8 0" nodeId="154"/>
+        <TransformGroup name="cols" visibility="false" clipDistance="10" nodeId="155">
+          <Shape shapeId="5" name="solidCol" compoundChild="true" collisionMask="16781578" density="0.0001" nodeId="156" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="6" name="colChunk_back_left" compoundChild="true" collisionMask="12552" nodeId="157" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="7" name="colChunk_back_center" compoundChild="true" collisionMask="12288" nodeId="158" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="colChunk_back_right" compoundChild="true" collisionMask="12552" nodeId="159" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="9" name="colChunk_center_left" compoundChild="true" collisionMask="12288" nodeId="160" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="10" name="colChunk_center_right" compoundChild="true" collisionMask="12288" nodeId="161" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="11" name="colChunk_front_left" compoundChild="true" collisionMask="12552" nodeId="162" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="12" name="colChunk_front_center" compoundChild="true" collisionMask="12288" nodeId="163" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="13" name="colChunk_front_right" compoundChild="true" collisionMask="12552" nodeId="164" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="content" nodeId="165">
+          <Shape shapeId="14" name="chocolateBox01" translation="-0.303998 0.145827 -0.197137" clipDistance="100" nodeId="166" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox02" translation="-0.302418 0.145827 0.204286" clipDistance="100" nodeId="167" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox03" translation="0.297613 0.145033 -0.197137" clipDistance="100" nodeId="168" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox04" translation="0.299194 0.145033 0.204286" clipDistance="100" nodeId="169" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox05" translation="-0.303998 0.346826 -0.197137" rotation="0 180 0" clipDistance="100" nodeId="170" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox06" translation="-0.302418 0.346826 0.204286" rotation="0 180 0" clipDistance="100" nodeId="171" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox07" translation="0.297613 0.346032 -0.197137" rotation="0 180 0" clipDistance="100" nodeId="172" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox08" translation="0.299194 0.346032 0.204286" rotation="0 180 0" clipDistance="100" nodeId="173" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox09" translation="-0.303998 0.547071 -0.197137" clipDistance="100" nodeId="174" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox10" translation="-0.302418 0.547071 0.204286" clipDistance="100" nodeId="175" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox11" translation="0.297613 0.546277 -0.197137" clipDistance="100" nodeId="176" materialIds="133" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="14" name="chocolateBox12" translation="0.299194 0.546277 0.204286" clipDistance="100" nodeId="177" materialIds="133" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="contentCols" visibility="false" nodeId="178">
+          <Shape shapeId="15" name="chocolateBoxCol01" translation="-0.304 0.146 -0.199797" compoundChild="true" nodeId="179" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol02" translation="-0.304 0.146 0.202019" compoundChild="true" nodeId="180" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol03" translation="0.296874 0.146 -0.199797" compoundChild="true" nodeId="181" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol04" translation="0.296874 0.146 0.202019" compoundChild="true" nodeId="182" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol05" translation="-0.304 0.34674 -0.199797" compoundChild="true" nodeId="183" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol06" translation="-0.304 0.34674 0.202019" compoundChild="true" nodeId="184" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol07" translation="0.296874 0.34674 -0.199797" compoundChild="true" nodeId="185" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol08" translation="0.296874 0.34674 0.202019" compoundChild="true" nodeId="186" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol09" translation="-0.304 0.546678 -0.199797" compoundChild="true" nodeId="187" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol10" translation="-0.304 0.546678 0.202019" compoundChild="true" nodeId="188" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol11" translation="0.296874 0.546678 -0.199797" compoundChild="true" nodeId="189" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="chocolateBoxCol12" translation="0.296874 0.546678 0.202019" compoundChild="true" nodeId="190" materialIds="130" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

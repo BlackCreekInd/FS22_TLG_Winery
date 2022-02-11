@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+
+		<!--New fillTypes-->
+
+		<text name=""        text=""/>
+	
+		
+		<!--New Pallets-->
+		<text name="storeItem_grapeBoxPallet"           text="Bud palette"/>
+	    <text name="storeItem_oliveBoxPallet"           text="Oliven palette"/>
+		
+		<!--New Shop Item Names & Functions-->
+        <text name="shopItem_vinehouse"               text="Rebhaus"/>
+		<text name="shopItem_vinehouseRev"            text="Rebhaus Rückseite"/>
+		
+	</texts>
+</l10n>

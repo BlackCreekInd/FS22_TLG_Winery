@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tpn140" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="8" filename="$data/vehicles/tmcCancela/tpn140/tpn140Decal_diffuse.png"/>
+    <File fileId="9" filename="$data/vehicles/tmcCancela/tpn140/tpn140Decal_normal.png"/>
+    <File fileId="2" filename="$data/vehicles/tmcCancela/tpn140/tpn140_normal.png"/>
+    <File fileId="3" filename="$data/vehicles/tmcCancela/tpn140/tpn140_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="tpn140_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8713 0.2051 0.007 0"/>
+      <CustomParameter name="colorMat1" value="1 1 0 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="tpn140_mat1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="windBend_colorMask_vtxColor">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8713 0.2051 0.007 0"/>
+      <CustomParameter name="colorMat1" value="1 1 0 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+      <CustomParameter name="directionBend" value="0 0 1 0"/>
+      <CustomParameter name="prevDirectionBend" value="0 0 1 0"/>
+    </Material>
+    <Material name="tpn140Decal_mat" materialId="7" alphaBlending="true" customShaderId="4" customShaderVariation="Decal_normalThirdUV">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="tpn140Decal_mat1" materialId="8" alphaBlending="true" customShaderId="4" customShaderVariation="Decal_normalThirdUV_colorMask">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="1 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tpn140.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="tpn140_main_component1" dynamic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="tpn140_vis" clipDistance="300" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true" skinBindNodeIds="19 26 33 34">
+          <TransformGroup name="attachable" nodeId="20">
+            <TransformGroup name="attacherJoint" translation="0 0.320471 0.57134" rotation="0 90 0" nodeId="21"/>
+            <TransformGroup name="topReferenceNode" translation="0 0.930471 0.58134" nodeId="22"/>
+            <TransformGroup name="pto" nodeId="23">
+              <TransformGroup name="ptoInputNode" translation="0.0249997 0.5505 0.254781" rotation="0 180 0" nodeId="24"/>
+              <TransformGroup name="ptoDetachNode" translation="0.0249997 0.493678 0.907478" rotation="-21.4092 180 0" nodeId="25"/>
+              <TransformGroup name="ptoHolder" translation="-0.0327316 0.893078 0.567181" clipDistance="300" nodeId="26"/>
+            </TransformGroup>
+            <Shape shapeId="3" name="supportCol" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="4" name="supportCol1" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="wheels" nodeId="29">
+            <TransformGroup name="wheel01" translation="0.700247 0.0788421 -0.364693" nodeId="30"/>
+            <TransformGroup name="wheel02" translation="-0.7 0.0788421 -0.364693" nodeId="31"/>
+          </TransformGroup>
+          <TransformGroup name="movingParts" nodeId="32">
+            <TransformGroup name="roll01" translation="0 0.0788421 -0.364693" clipDistance="300" nodeId="33"/>
+            <TransformGroup name="mulcher" translation="0.000470734 0.211745 2.38419e-09" clipDistance="300" nodeId="34"/>
+            <Shape shapeId="5" name="cover01" clipDistance="80" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="workAreas" nodeId="36">
+            <TransformGroup name="workAreaStart" translation="1.5 0 0.188759" nodeId="37"/>
+            <TransformGroup name="workAreaWidth" translation="-1.5 0 0.188759" nodeId="38"/>
+            <TransformGroup name="workAreaHeight" translation="1.5 0 -0.1381" nodeId="39"/>
+            <TransformGroup name="groundReferenceNode" translation="0 0.0132469 0" nodeId="40"/>
+          </TransformGroup>
+          <TransformGroup name="ai" nodeId="41">
+            <TransformGroup name="aiMarkerLeft" translation="1.5 0 0.238997" nodeId="42"/>
+            <TransformGroup name="aiMarkerRight" translation="-1.5 0 0.238997" nodeId="43"/>
+            <TransformGroup name="aiMarkerBack" translation="0 0 -0.161414" nodeId="44"/>
+            <TransformGroup name="aiCollisionNode" translation="0 0 0.487351" nodeId="45"/>
+          </TransformGroup>
+          <TransformGroup name="effects" nodeId="46">
+            <Shape shapeId="6" name="smokeEmitter" translation="0 0.0580221 -0.247944" rotation="-42.3431 0 0" clipDistance="300" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="mulcherEffectNode" nodeId="48"/>
+          </TransformGroup>
+          <TransformGroup name="visuals" nodeId="49">
+            <Shape shapeId="7" name="tpn140_decal" clipDistance="50" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="8" name="tpn140_screwDecal" clipDistance="30" nodeId="51" materialIds="8" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

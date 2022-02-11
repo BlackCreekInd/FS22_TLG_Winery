@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd"> 
+    <fillTypes>        
+		<fillType name="GRAPE" title="$l10n_fillType_grape" showOnPriceTable="true">
+            <physics massPerLiter="0.7" maxPhysicalSurfaceAngle="38" />
+            <pallet     filename="fillTypes/pallets/grapeBoxPallet/grapeBoxPallet.xml" />
+        </fillType>
+		<fillType name="OLIVE" title="$l10n_fillType_olive" showOnPriceTable="true">
+            <physics massPerLiter="0.60" maxPhysicalSurfaceAngle="15" />
+            <pallet     filename="fillTypes/pallets/oliveBoxPallet/oliveBoxPallet.xml" />
+        </fillType>
+    </fillTypes>
+	
+	
+    <fillTypeCategories>   
+        <fillTypeCategory name="PRODUCT"></fillTypeCategory>	
+    </fillTypeCategories>    
+</map>

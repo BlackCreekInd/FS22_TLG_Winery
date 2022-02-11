@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="vine" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>grape green singleton</name>
+        <functions>
+            <function>$l10n_function_grapeOrchard</function>
+        </functions>
+        <image>$data/store/store_empty.png</image>
+        <price>0</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>fences</category>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <vertexBufferMemoryUsage>2045440</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>198144</indexBufferMemoryUsage>
+        <textureMemoryUsage>1703936</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <brush>
+            <type>none</type>
+        </brush>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>grapeGreen/grapeGreen.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <fence maxVerticalAngle="45" boundingCheckWidth="5.5" snapDistance="3" snapCheckDistance="3.1" extendingOnly="true" maxCornerAngle="0" supportsParallelSnapping="true">
+        <poles node="0>" /> <!-- contains list of children each is a variant -->
+        <panels node="1>" length="3" fixedLength="true" /> <!-- contains list of children each is a variant -->
+    </fence>
+
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas/>
+    <ai>
+        <updateAreas />
+    </ai>
+
+    <vine fruitType="GRAPEGREEN" width="3" length="3" numSections="3" >
+        <!-- node indices relativ to panel node -->
+        <growthStates previewNodeIndex="3" >
+            <growthState nodeIndex="1|0"> <!-- no leaves & dead -->
+                <foliage state="1"  sectionState="0" />
+                <foliage state="14" sectionState="1" />
+            </growthState>
+            <growthState nodeIndex="1|1"> <!-- green small -->
+                <foliage state="2" sectionState="1" />
+                <foliage state="3" sectionState="1" />
+                <foliage state="4" sectionState="1" />
+                <foliage state="5" sectionState="1" />
+            </growthState>
+            <growthState nodeIndex="1|2"> <!-- green big -->
+                <foliage state="6" sectionState="1" />
+                <foliage state="7" sectionState="1" />
+                <foliage state="8" sectionState="1" />
+                <foliage state="9" sectionState="1" />
+            </growthState>
+            <growthState nodeIndex="1|3"> <!-- harvest ready & harvested -->
+                <foliage state="10" sectionState="1" />
+                <foliage state="11" sectionState="1" />
+                <foliage state="12" sectionState="0" />
+                <foliage state="13" sectionState="0" />
+            </growthState>
+        </growthStates>
+
+        <resetStates>
+            <resetState state="1" targetState="1" threshold="0.6" /> <!-- at least 60% of the whole are needs to be prepared to allow regrowing -->
+        </resetStates>
+    </vine>
+
+</placeable>

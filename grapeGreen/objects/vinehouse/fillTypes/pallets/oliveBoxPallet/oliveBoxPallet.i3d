@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="clothesBoxPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="textures/roundbaleGrass125_diffuse.png"/>
+    <File fileId="5" filename="textures/plasticBarrel_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/textures/shared/props/plasticBarrel_normal.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/plasticBarrel_specular.png"/>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
+    <File fileId="12" filename="$data/objects/roundbales/roundbale125/roundbale125_alpha.png"/>
+    <File fileId="9" filename="$data/objects/roundbales/roundbale125/roundbale125_normal.png"/>
+    <File fileId="10" filename="$data/objects/roundbales/roundbale125/roundbale125_specular.png"/>
+    <File fileId="13" filename="$data/objects/roundbales/roundbaleWrapDefault_diffuse.png"/>
+    <File fileId="14" filename="$data/objects/roundbales/roundbaleWrapDefault_normal.png"/>
+    <File fileId="11" filename="$data/shaders/silageBaleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="4">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="plasticBarrel_mat" materialId="6">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="roundbale125_mat" materialId="7" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9" bumpDepth="0.3"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="alphaMap" fileId="12"/>
+      <Custommap name="wrapDiffuseMap" fileId="13"/>
+      <Custommap name="wrapNormalMap" fileId="14"/>
+      <CustomParameter name="wrappingState" value="0 0 0 0"/>
+      <CustomParameter name="colorScale" value="0.6662 0.3839 0.5481 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="oliveBoxPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="clothesBoxPallet_component1" dynamic="true" compound="true" collisionMask="2109442" density="0.0001" clipDistance="150" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="19" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="0 0.9 0" nodeId="20"/>
+          <TransformGroup name="content" nodeId="21">
+            <Shape shapeId="4" name="plasticBarrel01" translation="0.35 0.145 0.16" scale="0.75 0.77 0.75" clipDistance="70" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBarrel01Tension" nodeId="23" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="6" name="fillPlane" translation="0 0.963028 0" scale="0.86 1 0.86" clipDistance="300" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="plasticBarrel02" translation="0 0.145 -0.16" scale="0.75 0.77 0.75" clipDistance="70" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBarrel02Tension" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="6" name="fillPlane" translation="0 0.963028 0" scale="0.86 1 0.86" clipDistance="300" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="4" name="plasticBarrel03" translation="-0.35 0.145 0.16" scale="0.75 0.77 0.75" clipDistance="70" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBarrel03Tension" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="6" name="fillPlane" translation="0 0.963028 0" scale="0.86 1 0.86" clipDistance="300" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="31">
+            <Shape shapeId="7" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="8" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

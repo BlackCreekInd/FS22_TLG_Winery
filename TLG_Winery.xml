@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_TLG_Winery</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>store_textures/store_MW_WEINGUT.png</image>
+        <price>200000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>TLG</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1033728</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>152832</indexBufferMemoryUsage>
+        <textureMemoryUsage>11730944</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>MW_WEINGUT.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+            <testArea startNode="testArea2Start" endNode="testArea2End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+            <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass"/>
+            <paintArea startNode="paintArea2Start" widthNode="paintArea2Width" heightNode="paintArea2Height" groundType="grass"/>
+            <paintArea startNode="paintArea3Start" widthNode="paintArea3Width" heightNode="paintArea3Height" groundType="grass"/>
+            <paintArea startNode="paintArea4Start" widthNode="paintArea4Width" heightNode="paintArea4Height" groundType="grass"/>
+            <paintArea startNode="paintArea5Start" widthNode="paintArea5Width" heightNode="paintArea5Height" groundType="grass"/>
+            <paintArea startNode="paintArea6Start" widthNode="paintArea6Width" heightNode="paintArea6Height" groundType="grass"/>
+            <paintArea startNode="paintArea7Start" widthNode="paintArea7Width" heightNode="paintArea7Height" groundType="grass"/>
+            <paintArea startNode="paintArea8Start" widthNode="paintArea8Width" heightNode="paintArea8Height" groundType="grass"/>
+            <paintArea startNode="paintArea9Start" widthNode="paintArea9Width" heightNode="paintArea9Height" groundType="grass"/>
+            <paintArea startNode="paintArea10Start" widthNode="paintArea10Width" heightNode="paintArea10Height" groundType="grass"/>				
+        </paintAreas>			
+    </leveling>
+	
+    <foliageAreas>
+        <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea2Start" widthNode="foliageArea2Width" heightNode="foliageArea2Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea3Start" widthNode="foliageArea3Width" heightNode="foliageArea3Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea4Start" widthNode="foliageArea4Width" heightNode="foliageArea4Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea5Start" widthNode="foliageArea5Width" heightNode="foliageArea5Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea6Start" widthNode="foliageArea6Width" heightNode="foliageArea6Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea7Start" widthNode="foliageArea7Width" heightNode="foliageArea7Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea8Start" widthNode="foliageArea8Width" heightNode="foliageArea8Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea9Start" widthNode="foliageArea9Width" heightNode="foliageArea9Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea10Start" widthNode="foliageArea10Width" heightNode="foliageArea10Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea11Start" widthNode="foliageArea11Width" heightNode="foliageArea11Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea12Start" widthNode="foliageArea12Width" heightNode="foliageArea12Height" decoFoliage="grassShort" />		
+        <foliageArea startNode="foliageArea13Start" widthNode="foliageArea13Width" heightNode="foliageArea13Height" decoFoliage="grassShort" />	 
+ </foliageAreas>		
+	
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height" />
+        <indoorArea startNode="indoorArea3Start" widthNode="indoorArea3Width" heightNode="indoorArea3Height" />
+        <indoorArea startNode="indoorArea4Start" widthNode="indoorArea4Width" heightNode="indoorArea4Height" />
+        <indoorArea startNode="indoorArea5Start" widthNode="indoorArea5Width" heightNode="indoorArea5Height" />		
+    </indoorAreas>
+	
+
+  <lights>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode01" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode02" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode03" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode04" groupIndex="1">
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode05" groupIndex="1">
+        </sharedLight>
+       
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
+            </sounds>
+        </group>
+    </lights>	
+	
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="unloadTriggerAISpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="WM_WEINGUT_PROBS.i3d" node="0" linkNode="propsLinkNode" />
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight1" />		
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight2" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight3" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight4" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight5" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight6" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight7" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight8" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight9" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight10" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight11" />	
+        <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight12" />	
+		
+    </dynamicallyLoadedParts>
+
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+	
+    <animatedObjects>
+	
+	<animatedObject saveId="rollingDoor1" >
+            <animation duration="5">
+                <part node="rollingDoor1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 5.864 0"/>
+                </part>
+
+                <part node="rollingDoor1ColPartBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 5.864 0"/>
+                </part>
+                <part node="rollingDoor1ColPartTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.5" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.046 0"/>
+                </part>
+                <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - - " />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+
+			
+            </animation>
+            <controls triggerNode="rollingDoor1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor1Trigger" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor1Trigger" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor1Trigger" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>				
+			
+	   <animatedObject saveId="TOR_A" >
+            <animation duration="1.5">
+                <part node="TOR_A1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -127.42 0"/>
+                </part>
+                <part node="TOR_A2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="TOR_A_Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="TOR_A_Trigger" template="woodBigDoorLoop" />
+                <posEnd linkNode="TOR_A_Trigger" template="metalDoorsOpen" />
+                <negEnd linkNode="TOR_A_Trigger" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+
+	   <animatedObject saveId="TOR_B" >
+            <animation duration="1.5">
+                <part node="TOR_B1">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+                <part node="TOR_B2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 119.33 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="TOR_B_Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="TOR_B_Trigger" template="woodBigDoorLoop" />
+                <posEnd linkNode="TOR_B_Trigger" template="metalDoorsOpen" />
+                <negEnd linkNode="TOR_B_Trigger" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>			
+			
+	   <animatedObject saveId="TOR_C" >
+            <animation duration="1.5">
+                <part node="TOR_C1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="-4.641 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="TOR_C_Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="TOR_C_Trigger" template="woodBigDoorLoop" />
+                <posEnd linkNode="TOR_C_Trigger" template="metalDoorsOpen" />
+                <negEnd linkNode="TOR_C_Trigger" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>		
+
+	   <animatedObject saveId="TOR_D" >
+            <animation duration="1.5">
+                <part node="TOR_D1">
+                    <keyFrame time="0.0" translation="-2.491 0 -0.025"/>
+                    <keyFrame time="1.0" translation="-4.575 0 -0.025"/>
+                </part>
+                <part node="TOR_D2">
+                    <keyFrame time="0.0" translation="0 0 0.024"/>
+                    <keyFrame time="1.0" translation="-4.84 0 0.024"/>
+                </part>
+                <part node="TOR_D3">
+                    <keyFrame time="0.0" translation="2.489 0 0.053"/>
+                    <keyFrame time="1.0" translation="-5.115 0 0.065"/>
+                </part>				
+				
+            </animation>
+            <controls triggerNode="TOR_D_Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="TOR_D_Trigger" template="woodBigDoorLoop" />
+                <posEnd linkNode="TOR_D_Trigger" template="metalDoorsOpen" />
+                <negEnd linkNode="TOR_D_Trigger" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+
+	   <animatedObject saveId="TOR_E" >
+            <animation duration="1.5">
+                <part node="TOR_E1">
+                    <keyFrame time="0.0" translation="2.489 0 0"/>
+                    <keyFrame time="1.0" translation="4.856 0 0"/>
+                </part>
+                <part node="TOR_E2">
+                    <keyFrame time="0.0" translation="0 0 0.047"/>
+                    <keyFrame time="1.0" translation="4.811 0 0.047"/>
+                </part>
+                <part node="TOR_E3">
+                    <keyFrame time="0.0" translation="-2.491 0 0.079"/>
+                    <keyFrame time="1.0" translation="5.115 0 0.079"/>
+                </part>				
+				
+            </animation>
+            <controls triggerNode="TOR_E_Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="TOR_E_Trigger" template="woodBigDoorLoop" />
+                <posEnd linkNode="TOR_E_Trigger" template="metalDoorsOpen" />
+                <negEnd linkNode="TOR_E_Trigger" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>	
+
+	   <animatedObject saveId="TOR_F" >
+            <animation duration="1.5">
+                <part node="TOR_F1">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.198 0"/>
+                </part>
+                <part node="TOR_F2">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 2.81 0"/>
+                </part>
+                <part node="TOR_F3">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>	
+                <part node="TOR_F4_Red">
+                    <keyFrame time="0.0" visibility="true"/>
+                    <keyFrame time="1.0" visibility="false"/>
+                </part>	
+                <part node="TOR_F4_Green">
+                    <keyFrame time="0.0" visibility="false"/>
+                    <keyFrame time="1.0" visibility="true"/>
+                </part>					
+				
+            </animation>
+            <controls triggerNode="TOR_F_Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="TOR_F_Trigger" template="woodBigDoorLoop" />
+                <posEnd linkNode="TOR_F_Trigger" template="metalDoorsOpen" />
+                <negEnd linkNode="TOR_F_Trigger" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>			
+        
+    </animatedObjects>	
+
+    <productionPoint>
+        <productions>
+            <production id="WINERED" name="Red" cyclesPerHour="54" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="GRAPE" amount="6" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINERED" amount="3" />
+                </outputs>
+            </production>
+            <production id="WINESWEETRED" name="Sweet Red" cyclesPerHour="54" costsPerActiveHour="12">
+                <inputs>
+                    <input fillType="GRAPE" amount="6" />
+                    <input fillType="HONEY" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINESWEETRED" amount="3" />
+                </outputs>
+            </production>
+            <production id="WINERESERVE" name="Reserve" cyclesPerHour="54" costsPerActiveHour="18">
+                <inputs>
+                    <input fillType="GRAPE" amount="8" />
+                    <input fillType="HONEY" amount="4" />
+                    <input fillType="SUGAR" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINERESERVE" amount="3" />
+                </outputs>
+            </production>
+            <production id="WINEPORT" name="Port" cyclesPerHour="54" costsPerActiveHour="24">
+                <inputs>
+                    <input fillType="GRAPE" amount="8" />
+                    <input fillType="HONEY" amount="6" />
+                    <input fillType="SUGAR" amount="6" />
+                    <input fillType="STRAWBERRY" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINEPORT" amount="3" />
+                </outputs>
+            </production>
+            <production id="WINEWHITE" name="White" cyclesPerHour="54" costsPerActiveHour="8">
+                <inputs>
+                    <input fillType="GRAPEGREEN" amount="6" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINEWHITE" amount="3" />
+                </outputs>
+            </production>
+            <production id="WINEROSE" name="Rosé" cyclesPerHour="54" costsPerActiveHour="24">
+                <inputs>
+                    <input fillType="GRAPE" amount="8" />
+                    <input fillType="GRAPEGREEN" amount="8" />
+                    <input fillType="HONEY" amount="6" />
+                    <input fillType="SUGAR" amount="6" />
+                    <input fillType="STRAWBERRY" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINEROSE" amount="3" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="GRAPE"      capacity="125000" />
+            <capacity fillType="GRAPEGREEN"      capacity="125000" />
+            <capacity fillType="SUGAR"      capacity="90000" />
+            <capacity fillType="HONEY"      capacity="90000" />
+            <capacity fillType="STRAWBERRY"      capacity="90000" />
+            <capacity fillType="WINERED" capacity="15000" />
+            <capacity fillType="WINESWEETRED" capacity="15000" />
+            <capacity fillType="WINERESERVE" capacity="15000" />
+            <capacity fillType="WINEPORT" capacity="15000" />
+            <capacity fillType="WINEWHITE" capacity="15000" />
+            <capacity fillType="WINEROSE" capacity="15000" />
+        </storage>
+
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="GRAPE GRAPEGREEN SUGAR HONEY STRAWBERRY"/>
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="raisinIdle" linkNode="0>" />
+            <active template="raisinWork" linkNode="0>" />
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="interiorDay" node="0>0|3" />
+        <i3dMapping id="propsLinkNode" node="0>14" />
+
+        <i3dMapping id="OldLight1" node="0>9|0|0" />
+        <i3dMapping id="OldLight2" node="0>9|0|1" />
+        <i3dMapping id="OldLight3" node="0>9|0|2" />
+        <i3dMapping id="OldLight4" node="0>9|0|3" />
+        <i3dMapping id="OldLight5" node="0>9|0|4" />
+        <i3dMapping id="OldLight6" node="0>9|0|5" />
+        <i3dMapping id="OldLight7" node="0>9|0|6" />
+        <i3dMapping id="OldLight8" node="0>9|0|7" />
+        <i3dMapping id="OldLight9" node="0>9|0|8" />
+        <i3dMapping id="OldLight10" node="0>9|0|9" />
+        <i3dMapping id="OldLight11" node="0>9|0|10" />
+        <i3dMapping id="OldLight12" node="0>9|0|11" />
+		
+
+		
+        <i3dMapping id="rollingDoor1" node="0>16|0|0" />
+        <i3dMapping id="rollingDoor1ColPartBottom" node="0>16|0|1" />
+        <i3dMapping id="rollingDoor1ColPartTop" node="0>16|0|2" />
+        <i3dMapping id="rollingDoor1Trigger" node="0>16|0|3" />	
+
+        <i3dMapping id="TOR_A_Trigger" node="0>16|1|0" />
+        <i3dMapping id="TOR_A1" node="0>16|1|1" />
+        <i3dMapping id="TOR_A2" node="0>16|1|2" />
+		
+        <i3dMapping id="TOR_B_Trigger" node="0>16|2|0" />
+        <i3dMapping id="TOR_B1" node="0>16|2|1" />
+        <i3dMapping id="TOR_B2" node="0>16|2|2" />		
+
+        <i3dMapping id="TOR_C_Trigger" node="0>16|3|0" />
+        <i3dMapping id="TOR_C1" node="0>16|3|1" />	
+
+        <i3dMapping id="TOR_D_Trigger" node="0>16|4|0" />
+        <i3dMapping id="TOR_D1" node="0>16|4|1" />			
+        <i3dMapping id="TOR_D2" node="0>16|4|2" />
+        <i3dMapping id="TOR_D3" node="0>16|4|3" />
+
+        <i3dMapping id="TOR_E_Trigger" node="0>16|5|0" />
+        <i3dMapping id="TOR_E1" node="0>16|5|1" />			
+        <i3dMapping id="TOR_E2" node="0>16|5|2" />
+        <i3dMapping id="TOR_E3" node="0>16|5|3" />
+		
+        <i3dMapping id="TOR_F_Trigger" node="0>16|6|0" />
+        <i3dMapping id="TOR_F1" node="0>16|6|1" />			
+        <i3dMapping id="TOR_F2" node="0>10|0" />		
+        <i3dMapping id="TOR_F3" node="0>10|0|0" />
+		<i3dMapping id="TOR_F4_Red" node="0>16|6|2|1|0" />
+		<i3dMapping id="TOR_F4_Green" node="0>16|6|2|1|1" />
+		
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>1|1" />
+        <i3dMapping id="clearArea2Width" node="0>1|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>1|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea2Start" node="0>2|1" />
+        <i3dMapping id="levelArea2Width" node="0>2|1|0" />
+        <i3dMapping id="levelArea2Height" node="0>2|1|1" />
+		
+		<i3dMapping id="paintArea1Start" node="0>2|2" />
+		<i3dMapping id="paintArea1Width" node="0>2|2|0" />
+		<i3dMapping id="paintArea1Height" node="0>2|2|1" />
+		
+		<i3dMapping id="paintArea2Start" node="0>2|3" />
+		<i3dMapping id="paintArea2Width" node="0>2|3|0" />
+		<i3dMapping id="paintArea2Height" node="0>2|3|1" />
+
+		<i3dMapping id="paintArea3Start" node="0>2|4" />
+		<i3dMapping id="paintArea3Width" node="0>2|4|0" />
+		<i3dMapping id="paintArea3Height" node="0>2|4|1" />
+
+		<i3dMapping id="paintArea4Start" node="0>2|5" />
+		<i3dMapping id="paintArea4Width" node="0>2|5|0" />
+		<i3dMapping id="paintArea4Height" node="0>2|5|1" />
+
+		<i3dMapping id="paintArea5Start" node="0>2|6" />
+		<i3dMapping id="paintArea5Width" node="0>2|6|0" />
+		<i3dMapping id="paintArea5Height" node="0>2|6|1" />
+
+		<i3dMapping id="paintArea6Start" node="0>2|7" />
+		<i3dMapping id="paintArea6Width" node="0>2|7|0" />
+		<i3dMapping id="paintArea6Height" node="0>2|7|1" />
+
+		<i3dMapping id="paintArea7Start" node="0>2|8" />
+		<i3dMapping id="paintArea7Width" node="0>2|8|0" />
+		<i3dMapping id="paintArea7Height" node="0>2|8|1" />
+
+		<i3dMapping id="paintArea8Start" node="0>2|9" />
+		<i3dMapping id="paintArea8Width" node="0>2|9|0" />
+		<i3dMapping id="paintArea8Height" node="0>2|9|1" />
+
+		<i3dMapping id="paintArea9Start" node="0>2|10" />
+		<i3dMapping id="paintArea9Width" node="0>2|10|0" />
+		<i3dMapping id="paintArea9Height" node="0>2|10|1" />
+		
+		<i3dMapping id="paintArea10Start" node="0>2|11" />
+		<i3dMapping id="paintArea10Width" node="0>2|11|0" />
+		<i3dMapping id="paintArea10Height" node="0>2|11|1" />		
+		
+
+		<i3dMapping id="foliageArea1Start" 	node="0>17|0" />
+        <i3dMapping id="foliageArea1Width" 	node="0>17|0|0" />
+        <i3dMapping id="foliageArea1Height" node="0>17|0|1" />
+
+		<i3dMapping id="foliageArea2Start" 	node="0>17|1" />
+        <i3dMapping id="foliageArea2Width" 	node="0>17|1|0" />
+        <i3dMapping id="foliageArea2Height" node="0>17|1|1" />
+		
+		<i3dMapping id="foliageArea3Start" 	node="0>17|2" />
+        <i3dMapping id="foliageArea3Width" 	node="0>17|2|0" />
+        <i3dMapping id="foliageArea3Height" node="0>17|2|1" />
+		
+		<i3dMapping id="foliageArea4Start" 	node="0>17|3" />
+        <i3dMapping id="foliageArea4Width" 	node="0>17|3|0" />
+        <i3dMapping id="foliageArea4Height" node="0>17|3|1" />
+		
+		<i3dMapping id="foliageArea5Start" 	node="0>17|4" />
+        <i3dMapping id="foliageArea5Width" 	node="0>17|4|0" />
+        <i3dMapping id="foliageArea5Height" node="0>17|4|1" />
+		
+		<i3dMapping id="foliageArea6Start" 	node="0>17|5" />
+        <i3dMapping id="foliageArea6Width" 	node="0>17|5|0" />
+        <i3dMapping id="foliageArea6Height" node="0>17|5|1" />
+		
+		<i3dMapping id="foliageArea7Start" 	node="0>17|6" />
+        <i3dMapping id="foliageArea7Width" 	node="0>17|6|0" />
+        <i3dMapping id="foliageArea7Height" node="0>17|6|1" />
+		
+		<i3dMapping id="foliageArea8Start" 	node="0>17|7" />
+        <i3dMapping id="foliageArea8Width" 	node="0>17|7|0" />
+        <i3dMapping id="foliageArea8Height" node="0>17|7|1" />
+		
+		<i3dMapping id="foliageArea9Start" 	node="0>17|8" />
+        <i3dMapping id="foliageArea9Width" 	node="0>17|8|0" />
+        <i3dMapping id="foliageArea9Height" node="0>17|8|1" />
+		
+		<i3dMapping id="foliageArea10Start" 	node="0>17|9" />
+        <i3dMapping id="foliageArea10Width" 	node="0>17|9|0" />
+        <i3dMapping id="foliageArea10Height" node="0>17|9|1" />
+		
+		<i3dMapping id="foliageArea11Start" 	node="0>17|10" />
+        <i3dMapping id="foliageArea11Width" 	node="0>17|10|0" />
+        <i3dMapping id="foliageArea11Height" node="0>17|10|1" />
+		
+		<i3dMapping id="foliageArea12Start" 	node="0>17|11" />
+        <i3dMapping id="foliageArea12Width" 	node="0>17|11|0" />
+        <i3dMapping id="foliageArea12Height" node="0>17|11|1" />
+
+		<i3dMapping id="foliageArea13Start" 	node="0>17|12" />
+        <i3dMapping id="foliageArea13Width" 	node="0>17|12|0" />
+        <i3dMapping id="foliageArea13Height" node="0>17|12|1" />		
+		
+        <i3dMapping id="indoorArea1Start" node="0>3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>3|0|1" />
+        
+		<i3dMapping id="indoorArea2Start" node="0>3|1" />
+        <i3dMapping id="indoorArea2Width" node="0>3|1|0" />
+        <i3dMapping id="indoorArea2Height" node="0>3|1|1" />
+		
+        <i3dMapping id="indoorArea3Start" node="0>3|2" />
+        <i3dMapping id="indoorArea3Width" node="0>3|2|0" />
+        <i3dMapping id="indoorArea3Height" node="0>3|2|1" />
+
+        <i3dMapping id="indoorArea4Start" node="0>3|3" />
+        <i3dMapping id="indoorArea4Width" node="0>3|3|0" />
+        <i3dMapping id="indoorArea4Height" node="0>3|3|1" />
+
+        <i3dMapping id="indoorArea5Start" node="0>3|4" />
+        <i3dMapping id="indoorArea5Width" node="0>3|4|0" />
+        <i3dMapping id="indoorArea5Height" node="0>3|4|1" />		
+		
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+        <i3dMapping id="testArea2Start" node="0>4|1" />
+        <i3dMapping id="testArea2End" node="0>4|1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+        <i3dMapping id="infoTrigger" node="0>6" />
+
+        <i3dMapping id="sellingStation" node="0>10" />
+        <i3dMapping id="unloadTrigger" node="0>10|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>10|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>10|0|1" />
+        <i3dMapping id="unloadTriggerAISpline" node="0>10|0|2" />
+        <i3dMapping id="playerTrigger" node="0>11|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>11|0|0" />
+        <i3dMapping id="palletSpawner" node="0>12" />
+        <i3dMapping id="spawnSpace1start" node="0>12|0" />
+        <i3dMapping id="warningStripes" node="0>13" />
+		
+        <i3dMapping id="lightTrigger" node="0>19|0" />
+        <i3dMapping id="lightNode01" node="0>19|1" />
+        <i3dMapping id="lightNode02" node="0>19|2" />
+        <i3dMapping id="lightNode03" node="0>19|3" />
+        <i3dMapping id="lightNode04" node="0>19|4" />
+        <i3dMapping id="lightNode05" node="0>19|5" />
+        <i3dMapping id="realLightsLow" node="0>19|6|0" />
+        <i3dMapping id="realLightsHigh" node="0>19|6|1" />		
+    </i3dMappings>
+</placeable>

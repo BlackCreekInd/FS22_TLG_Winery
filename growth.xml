@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<growth>
+    <seasonal>
+        <!--
+        period 1: early spring to mid spring
+        period 2: mid spring, to late spring
+        period 3: late spring, to early summer
+        period 4: early summer, to mid summer
+        period 5: mid summer, to late summer
+        period 6: late summer, to early autumn
+        period 7: early autumn, to mid autumn
+        period 8: mid autumn, to late autumn
+        period 9: late autumn, to early winter
+        period 10: early winter, to mid winter
+        period 11: mid winter, to late winter
+        period 12: late winter, to early spring
+        -->
+
+        <!-- grape has 14 states -->
+        <fruit name="grapegreen" initialState="3-9">
+            <period index="1" plantingAllowed="true">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+            </period>
+            <period index="2" plantingAllowed="true">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+                <update range="2-3" add="2" />
+            </period>
+            <period index="3" plantingAllowed="true">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+                <update range="2-3" add="2" />
+            </period>
+            <period index="4">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+                <update range="2-5" add="2" />
+            </period>
+            <period index="5">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+                <update range="2-7" add="2" />
+            </period>
+            <period index="6">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+                <update range="2-9" add="2" />
+            </period>
+            <period index="7">
+                <update range="1" set="3" /> <!-- always grow to first weed state -->
+                <update range="2-9" add="2" />
+            </period>
+            <period index="8">
+                <update range="2-13" set="14" />
+            </period>
+            <period index="9">
+                <update range="2-13" set="14" />
+            </period>
+            <period index="10">
+                <update range="2-13" set="14" />
+            </period>
+            <period index="11">
+                <update range="2-13" set="14" />
+            </period>
+            <period index="12">
+                <update range="2-13" set="14" />
+            </period>
+        </fruit>
+    </seasonal>
+    <nonSeasonal>	
+        <fruit name="grapegreen">
+            <update range="1" set="3" />
+            <update range="2-9" add="2" />
+            <update range="12-13" set="14" />
+        </fruit>
+    </nonSeasonal>
+</growth>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>WilkDev</translationContributors>
+    <texts>
+		<text name="modtitle" text="Brewery - produkcja piwa [BETA]" />
+		<text name="filltype_wheatbeer" text="Piwo pszeniczne" />
+		<text name="filltype_barleybeer" text="Piwo jęczmienne" />
+		<text name="filltype_honeybeer" text="Piwo miodowe" />
+		<text name="filltype_strawberrybeer" text="Piwo truskawkowe" />
+		<text name="brewery_factory" text="Produkcja piwa" />
+		<text name="brewery_sellpoint" text="Brewery - Piwiarnia" />
+		<text name="pallet_barleybeer" text="Paleta piwa jeczmiennego" />
+		<text name="pallet_wheatbeer" text="Paleta piwa pszenicznego" />
+		<text name="pallet_honeybeer" text="Paleta piwa miodowego" />
+		<text name="pallet_strawberrybeer" text="Paleta piwa truskawowego" />
+		<text name="brewery_fastFoodRestaurant" text="Bar z piwem" />
+	</texts>
+</l10n>

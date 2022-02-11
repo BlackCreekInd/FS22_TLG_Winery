@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType>
+    <!-- grape
+
+    0 1 2 3
+
+    0 1 0 0 - no leaves
+    1 1 0 0 - no leaves
+    0 0 1 0 - green small
+    1 0 1 0 - green small 2
+    0 1 1 0 - green big
+    1 1 1 0 - green big 2
+    0 0 0 1 - harvest ready
+    1 0 0 1 - dead
+    0 1 0 1 - harvested (cut)
+
+    -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="1.8" shapeSource="grapeGreen.i3d">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.5" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+<!-- 1 : NO LEAVES -->
+        <foliageState name="no leaves" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 2 & 3 : GREEN SMALL -->
+        <foliageState name="green small" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="green small weed" distanceMap="distance/foliage_grapeGreenWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 4 & 5 : GREEN SMALL 2 -->
+        <foliageState name="green small 2" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="green small 2 weed" distanceMap="distance/foliage_grapeGreenWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 6 & 7 : GREEN BIG -->
+        <foliageState name="green big" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="green big weed" distanceMap="distance/foliage_grapeGreenWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 8 & 9 : GREEN BIG 2 -->
+        <foliageState name="green big 2" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="green big 2 weed" distanceMap="distance/foliage_grapeGreenWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 10 & 11 : HARVEST READY -->
+        <foliageState name="harvest ready" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvest ready weed" distanceMap="distance/foliage_grapeGreenWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 12 & 13 : HARVESTED -->
+        <foliageState name="harvested" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+        <foliageState name="harvested weed" distanceMap="distance/foliage_grapeGreenWeed_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5" />
+                <foliageLod blockShape="0>1|5" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 14 : DEAD -->
+        <foliageState name="dead" distanceMap="distance/foliage_grapeGreen_distance_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+</foliageType>
