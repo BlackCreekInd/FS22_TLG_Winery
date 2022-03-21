@@ -8,3 +8,6 @@ Initial build.
 V1-2-1-2
 Added Green Grape fillType, and Greenhouses to produce. Vines require map edit and additional mod.
 2 products added to Winery. White and Rose.
+
+V1-2-1-3
+Changed capacity of pallets to 504L
