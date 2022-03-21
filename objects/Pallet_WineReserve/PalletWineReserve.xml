@@ -74,7 +74,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="WINERESERVE" capacity="384">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="WINERESERVE" capacity="504">
                         <fillLevelAnimation name="fillAnimation" resetOnEmpty="true"/>
                     </fillUnit>
                 </fillUnits>
