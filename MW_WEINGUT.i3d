@@ -14,11 +14,11 @@
     <File fileId="29" filename="textures/MW_WEINGUT_HAUS_AO.dds"/>
     <File fileId="43" filename="textures/MW_WEINGUT_MAUER_TURM_AO.dds"/>
     <File fileId="45" filename="textures/MW_WEINGUT_REGAL_AO.dds"/>
-    <File fileId="68" filename="textures/Panda_Head_PNG-removebg-preview(1).png"/>
-    <File fileId="69" filename="textures/Reference Guide.png"/>
+    <File fileId="68" filename="textures/Panda_Head.png"/>
+    <File fileId="69" filename="textures/ReferenceGuide.png"/>
     <File fileId="63" filename="textures/SCHILD_BEUNDENTLADEN.dds"/>
     <File fileId="70" filename="textures/USFLAG.dds"/>
-    <File fileId="71" filename="textures/Wes-removebg-preview(1).png"/>
+    <File fileId="71" filename="textures/Wes.png"/>
     <File fileId="67" filename="textures/ad3x2_05_diffuse.dds"/>
     <File fileId="10" filename="$data/maps/mapAlpine/textures/balcony_diffuse.dds"/>
     <File fileId="11" filename="$data/maps/mapAlpine/textures/balcony_normal.dds"/>
