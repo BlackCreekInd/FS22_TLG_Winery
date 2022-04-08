@@ -26,7 +26,7 @@
     </storeData>
 
     <base>
-        <filename>MW_WEINGUT.i3d</filename>
+        <filename>ClassicWinery.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
 
@@ -136,7 +136,7 @@
     <infoTrigger triggerNode="infoTrigger" />
 
     <dynamicallyLoadedParts>
-        <dynamicallyLoadedPart filename="WM_WEINGUT_PROBS.i3d" node="0" linkNode="propsLinkNode" />
+        <dynamicallyLoadedPart filename="ClassicWinery_Props.i3d" node="0" linkNode="propsLinkNode" />
         <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight1" />		
         <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight2" />	
         <dynamicallyLoadedPart filename="LAMP.i3d" node="0" linkNode="OldLight3" />	
@@ -413,7 +413,96 @@
 
         <palletSpawner node="palletSpawner">
             <spawnPlaces>
-                <spawnPlace startNode="spawnSpace1start" />
+                <spawnPlace startNode="spawnSpace1_1start" />
+				<spawnPlace startNode="spawnSpace1_2start" />
+				<spawnPlace startNode="spawnSpace1_3start" />
+				<spawnPlace startNode="spawnSpace1_4start" />
+				<spawnPlace startNode="spawnSpace1_5start" />
+				<spawnPlace startNode="spawnSpace1_6start" />
+				<spawnPlace startNode="spawnSpace1_7start" />
+				<spawnPlace startNode="spawnSpace1_8start" />
+				<spawnPlace startNode="spawnSpace1_9start" />
+				<spawnPlace startNode="spawnSpace2_1start" />
+				<spawnPlace startNode="spawnSpace2_2start" />
+				<spawnPlace startNode="spawnSpace2_3start" />
+				<spawnPlace startNode="spawnSpace2_4start" />
+				<spawnPlace startNode="spawnSpace2_5start" />
+				<spawnPlace startNode="spawnSpace2_6start" />
+				<spawnPlace startNode="spawnSpace2_7start" />
+				<spawnPlace startNode="spawnSpace2_8start" />
+				<spawnPlace startNode="spawnSpace2_9start" />
+				<spawnPlace startNode="spawnSpace3_1start" />
+				<spawnPlace startNode="spawnSpace3_2start" />
+				<spawnPlace startNode="spawnSpace3_3start" />
+				<spawnPlace startNode="spawnSpace3_4start" />
+				<spawnPlace startNode="spawnSpace3_5start" />
+				<spawnPlace startNode="spawnSpace3_6start" />
+				<spawnPlace startNode="spawnSpace3_7start" />
+				<spawnPlace startNode="spawnSpace3_8start" />
+				<spawnPlace startNode="spawnSpace3_9start" />
+				<spawnPlace startNode="spawnSpace4_1start" />
+				<spawnPlace startNode="spawnSpace4_2start" />
+				<spawnPlace startNode="spawnSpace4_3start" />
+				<spawnPlace startNode="spawnSpace4_4start" />
+				<spawnPlace startNode="spawnSpace4_5start" />
+				<spawnPlace startNode="spawnSpace4_6start" />
+				<spawnPlace startNode="spawnSpace4_7start" />
+				<spawnPlace startNode="spawnSpace4_8start" />
+				<spawnPlace startNode="spawnSpace4_9start" />
+				<spawnPlace startNode="spawnSpace5_1start" />
+				<spawnPlace startNode="spawnSpace5_2start" />
+				<spawnPlace startNode="spawnSpace5_3start" />
+				<spawnPlace startNode="spawnSpace5_4start" />
+				<spawnPlace startNode="spawnSpace5_5start" />
+				<spawnPlace startNode="spawnSpace5_6start" />
+				<spawnPlace startNode="spawnSpace5_7start" />
+				<spawnPlace startNode="spawnSpace5_8start" />
+				<spawnPlace startNode="spawnSpace5_9start" />
+				<spawnPlace startNode="spawnSpace6_1start" />
+				<spawnPlace startNode="spawnSpace6_2start" />
+				<spawnPlace startNode="spawnSpace6_3start" />
+				<spawnPlace startNode="spawnSpace6_4start" />
+				<spawnPlace startNode="spawnSpace6_5start" />
+				<spawnPlace startNode="spawnSpace6_6start" />
+				<spawnPlace startNode="spawnSpace6_7start" />
+				<spawnPlace startNode="spawnSpace6_8start" />
+				<spawnPlace startNode="spawnSpace6_9start" />
+				<spawnPlace startNode="spawnSpace7_1start" />
+				<spawnPlace startNode="spawnSpace7_2start" />
+				<spawnPlace startNode="spawnSpace7_3start" />
+				<spawnPlace startNode="spawnSpace7_4start" />
+				<spawnPlace startNode="spawnSpace7_5start" />
+				<spawnPlace startNode="spawnSpace7_6start" />
+				<spawnPlace startNode="spawnSpace7_7start" />
+				<spawnPlace startNode="spawnSpace7_8start" />
+				<spawnPlace startNode="spawnSpace7_9start" />
+				<spawnPlace startNode="spawnSpace8_1start" />
+				<spawnPlace startNode="spawnSpace8_2start" />
+				<spawnPlace startNode="spawnSpace8_3start" />
+				<spawnPlace startNode="spawnSpace8_4start" />
+				<spawnPlace startNode="spawnSpace8_5start" />
+				<spawnPlace startNode="spawnSpace8_6start" />
+				<spawnPlace startNode="spawnSpace8_7start" />
+				<spawnPlace startNode="spawnSpace8_8start" />
+				<spawnPlace startNode="spawnSpace8_9start" />
+				<spawnPlace startNode="spawnSpace9_1start" />
+				<spawnPlace startNode="spawnSpace9_2start" />
+				<spawnPlace startNode="spawnSpace9_3start" />
+				<spawnPlace startNode="spawnSpace9_4start" />
+				<spawnPlace startNode="spawnSpace9_5start" />
+				<spawnPlace startNode="spawnSpace9_6start" />
+				<spawnPlace startNode="spawnSpace9_7start" />
+				<spawnPlace startNode="spawnSpace9_8start" />
+				<spawnPlace startNode="spawnSpace9_9start" />
+				<spawnPlace startNode="spawnSpace10_1start" />
+				<spawnPlace startNode="spawnSpace10_2start" />
+				<spawnPlace startNode="spawnSpace10_3start" />
+				<spawnPlace startNode="spawnSpace10_4start" />
+				<spawnPlace startNode="spawnSpace10_5start" />
+				<spawnPlace startNode="spawnSpace10_6start" />
+				<spawnPlace startNode="spawnSpace10_7start" />
+				<spawnPlace startNode="spawnSpace10_8start" />
+				<spawnPlace startNode="spawnSpace10_9start" />
             </spawnPlaces>
         </palletSpawner>
 
@@ -618,9 +707,98 @@
         <i3dMapping id="unloadTriggerAISpline" node="0>10|0|2" />
         <i3dMapping id="playerTrigger" node="0>11|0" />
         <i3dMapping id="playerTriggerMarker" node="0>11|0|0" />
-        <i3dMapping id="palletSpawner" node="0>12" />
-        <i3dMapping id="spawnSpace1start" node="0>12|0" />
-        <i3dMapping id="warningStripes" node="0>13" />
+        <i3dMapping id="palletSpawner" node="9>5" />
+        <i3dMapping id="spawnSpace1_1start" node="9>5|0" />
+		<i3dMapping id="spawnSpace1_2start" node="9>5|1" />
+		<i3dMapping id="spawnSpace1_3start" node="9>5|2" />
+		<i3dMapping id="spawnSpace1_4start" node="9>5|3" />
+		<i3dMapping id="spawnSpace1_5start" node="9>5|4" />
+		<i3dMapping id="spawnSpace1_6start" node="9>5|5" />
+		<i3dMapping id="spawnSpace1_7start" node="9>5|6" />
+		<i3dMapping id="spawnSpace1_8start" node="9>5|7" />
+		<i3dMapping id="spawnSpace1_9start" node="9>5|8" />
+		<i3dMapping id="spawnSpace2_1start" node="10>5|0" />
+		<i3dMapping id="spawnSpace2_2start" node="10>5|1" />
+		<i3dMapping id="spawnSpace2_3start" node="10>5|2" />
+		<i3dMapping id="spawnSpace2_4start" node="10>5|3" />
+		<i3dMapping id="spawnSpace2_5start" node="10>5|4" />
+		<i3dMapping id="spawnSpace2_6start" node="10>5|5" />
+		<i3dMapping id="spawnSpace2_7start" node="10>5|6" />
+		<i3dMapping id="spawnSpace2_8start" node="10>5|7" />
+		<i3dMapping id="spawnSpace2_9start" node="10>5|8" />
+		<i3dMapping id="spawnSpace3_1start" node="11>5|0" />
+		<i3dMapping id="spawnSpace3_2start" node="11>5|1" />
+		<i3dMapping id="spawnSpace3_3start" node="11>5|2" />
+		<i3dMapping id="spawnSpace3_4start" node="11>5|3" />
+		<i3dMapping id="spawnSpace3_5start" node="11>5|4" />
+		<i3dMapping id="spawnSpace3_6start" node="11>5|5" />
+		<i3dMapping id="spawnSpace3_7start" node="11>5|6" />
+		<i3dMapping id="spawnSpace3_8start" node="11>5|7" />
+		<i3dMapping id="spawnSpace3_9start" node="11>5|8" />
+		<i3dMapping id="spawnSpace4_1start" node="12>5|0" />
+		<i3dMapping id="spawnSpace4_2start" node="12>5|1" />
+		<i3dMapping id="spawnSpace4_3start" node="12>5|2" />
+		<i3dMapping id="spawnSpace4_4start" node="12>5|3" />
+		<i3dMapping id="spawnSpace4_5start" node="12>5|4" />
+		<i3dMapping id="spawnSpace4_6start" node="12>5|5" />
+		<i3dMapping id="spawnSpace4_7start" node="12>5|6" />
+		<i3dMapping id="spawnSpace4_8start" node="12>5|7" />
+		<i3dMapping id="spawnSpace4_9start" node="12>5|8" />
+		<i3dMapping id="spawnSpace5_1start" node="13>5|0" />
+		<i3dMapping id="spawnSpace5_2start" node="13>5|1" />
+		<i3dMapping id="spawnSpace5_3start" node="13>5|2" />
+		<i3dMapping id="spawnSpace5_4start" node="13>5|3" />
+		<i3dMapping id="spawnSpace5_5start" node="13>5|4" />
+		<i3dMapping id="spawnSpace5_6start" node="13>5|5" />
+		<i3dMapping id="spawnSpace5_7start" node="13>5|6" />
+		<i3dMapping id="spawnSpace5_8start" node="13>5|7" />
+		<i3dMapping id="spawnSpace5_9start" node="13>5|8" />
+		<i3dMapping id="spawnSpace6_1start" node="14>5|0" />
+		<i3dMapping id="spawnSpace6_2start" node="14>5|1" />
+		<i3dMapping id="spawnSpace6_3start" node="14>5|2" />
+		<i3dMapping id="spawnSpace6_4start" node="14>5|3" />
+		<i3dMapping id="spawnSpace6_5start" node="14>5|4" />
+		<i3dMapping id="spawnSpace6_6start" node="14>5|5" />
+		<i3dMapping id="spawnSpace6_7start" node="14>5|6" />
+		<i3dMapping id="spawnSpace6_8start" node="14>5|7" />
+		<i3dMapping id="spawnSpace6_9start" node="14>5|8" />
+		<i3dMapping id="spawnSpace7_1start" node="15>5|0" />
+		<i3dMapping id="spawnSpace7_2start" node="15>5|1" />
+		<i3dMapping id="spawnSpace7_3start" node="15>5|2" />
+		<i3dMapping id="spawnSpace7_4start" node="15>5|3" />
+		<i3dMapping id="spawnSpace7_5start" node="15>5|4" />
+		<i3dMapping id="spawnSpace7_6start" node="15>5|5" />
+		<i3dMapping id="spawnSpace7_7start" node="15>5|6" />
+		<i3dMapping id="spawnSpace7_8start" node="15>5|7" />
+		<i3dMapping id="spawnSpace7_9start" node="15>5|8" />
+		<i3dMapping id="spawnSpace8_1start" node="16>5|0" />
+		<i3dMapping id="spawnSpace8_2start" node="16>5|1" />
+		<i3dMapping id="spawnSpace8_3start" node="16>5|2" />
+		<i3dMapping id="spawnSpace8_4start" node="16>5|3" />
+		<i3dMapping id="spawnSpace8_5start" node="16>5|4" />
+		<i3dMapping id="spawnSpace8_6start" node="16>5|5" />
+		<i3dMapping id="spawnSpace8_7start" node="16>5|6" />
+		<i3dMapping id="spawnSpace8_8start" node="16>5|7" />
+		<i3dMapping id="spawnSpace8_9start" node="16>5|8" />
+		<i3dMapping id="spawnSpace9_1start" node="17>5|0" />
+		<i3dMapping id="spawnSpace9_2start" node="17>5|1" />
+		<i3dMapping id="spawnSpace9_3start" node="17>5|2" />
+		<i3dMapping id="spawnSpace9_4start" node="17>5|3" />
+		<i3dMapping id="spawnSpace9_5start" node="17>5|4" />
+		<i3dMapping id="spawnSpace9_6start" node="17>5|5" />
+		<i3dMapping id="spawnSpace9_7start" node="17>5|6" />
+		<i3dMapping id="spawnSpace9_8start" node="17>5|7" />
+		<i3dMapping id="spawnSpace9_9start" node="17>5|8" />
+		<i3dMapping id="spawnSpace10_1start" node="18>5|0" />
+		<i3dMapping id="spawnSpace10_2start" node="18>5|1" />
+		<i3dMapping id="spawnSpace10_3start" node="18>5|2" />
+		<i3dMapping id="spawnSpace10_4start" node="18>5|3" />
+		<i3dMapping id="spawnSpace10_5start" node="18>5|4" />
+		<i3dMapping id="spawnSpace10_6start" node="18>5|5" />
+		<i3dMapping id="spawnSpace10_7start" node="18>5|6" />
+		<i3dMapping id="spawnSpace10_8start" node="18>5|7" />
+		<i3dMapping id="spawnSpace10_9start" node="18>5|8" />
+        <i3dMapping id="warningStripes" node="0>20" />
 		
         <i3dMapping id="lightTrigger" node="0>19|0" />
         <i3dMapping id="lightNode01" node="0>19|1" />

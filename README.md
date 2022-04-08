@@ -11,3 +11,6 @@ Added Green Grape fillType, and Greenhouses to produce. Vines require map edit a
 
 V1-2-1-3
 Changed capacity of pallets to 504L
+
+V1-2-2-3
+Replaced shelves and made all shelves spawn Pallets.
